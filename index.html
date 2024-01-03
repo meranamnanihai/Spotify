@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player:Music</title>
+    <link rel="stylesheet" href="utlity.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/spotify-logo-png-7078.png">
+</head>
+<body class='flex'>
+    <div class="main-left-side-cont">
+        <div class="main-left-side-cont-top">
+            <ul class="flex-column">
+                
+                    <li  class="flex" style="justify-content: space-between; padding-right: 50px;"><img src="images/spotify_logo.svg" alt="" srcset="" class="invert" style="width: 30%;" > <a href><img src="images/cancel.svg" alt="" srcset="" class="invert"  hidden id = "cancel"></a></li>
+                
+                <a href="">
+                    <li><i class="fa-solid fa-house fa-sm home-icons" style="color: #ffffff;"></i> Home</li>
+                </a>
+                <a href="#">
+                    <li id="home-last-li"> <i class="fa-solid fa-magnifying-glass fa-sm home-icons"
+                            style="color: #ffffff;"></i> Search</li>
+                </a>
+            </ul>
+        </div>
+        <div class="main-left-side-cont-bottom padding-5">
+            <div class="library-top-part color-white flex f-1"
+                style="font-family: helvetica; justify-content: space-between; align-items: center;">
+                <div class="library-head-wrapper flex" style="align-items: center; gap: 5%;">
+                    <img src="images/library_logo.svg" class="invert" style="width: 10%;">
+                    <h1>Your Library</h1>
+                </div>
+
+                <p class="f-2" style="font-weight: 1; cursor: pointer;">+</p>
+            </div>
+            <div class="playlist flex-column">
+                <div class="playlist-item border-w flex" style="align-items: center; justify-content: space-evenly; gap: 10%;" >
+                    <img src="images/music.svg" alt="" srcset="" class = "invert" style="height: 50%;">
+                    <p class = "width-70">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, aspernatur!</p>
+                    <img src="https://spotify.freewebhostmost.com/img/play.svg" alt="" srcset="" class="invert" style="height: 50%;">
+                </div>
+
+
+
+            </div>
+            <div class="playlist-footer" style="font-size: 60%;  font-family: helvetica; white-space: nowrap;">
+                <ul class="flex" style="gap: 5%;">
+                    <li><a href="">Legal</a></li>
+                    <li><a href="">Privacy center</a></li>
+                    <li><a href="">privacy policy</a></li>
+                    <li><a href="">Cokies</a></li>
+                    <li><a href="">About ads</a></li>
+                    <li><a href="">Accessbility</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-right-side-cont">
+        <div class="right-wrapper" style="position: relative; height: 100%; width: 100%;" >
+            <nav>
+                <div class="arrowsandham flex" >
+                    <img src="images/hamburger.svg" alt="" class="invert" hidden id="hamburger">
+                <div class="arrows" style="cursor: pointer;">
+                    <img src="images/left_arrow.svg" alt="" srcset="" class="invert">
+                    <img src="images/right_arrow.svg" alt="" class="invert">
+                </div>
+                </div>
+                
+                <div class="btns flex" style="gap: 20%; width: 20%; align-items: center; white-space: nowrap; ">
+                    <div class="signupbtn">Sign up</div>
+                    <div class="loginbtn">Log in</div>
+                </div>
+            </nav>
+
+            <div class="SpotifyPlaylists default-font" style="max-height: 50%;">
+
+
+                <H1 class="color-white">Spotify playlists</H1>
+                <div class="SpotifyPlaylistContainer flex" style="padding-bottom: 100px;">
+                    
+                    
+
+                </div>
+
+            </div>
+            <div class="playbar-wrapper">
+                <div class="playbar color-white default-font">
+                    <div class="playbar-controls">
+                        <div class="song-name flex">
+
+                        </div>
+                        <div class="playbar-btns">
+                            <img src="https://spotify.freewebhostmost.com/img/prevsong.svg" alt="" srcset="" style="height: 70%;" class="invert" id = "previous">
+                            <img src="images/play_btn.svg" alt="" style="height: 70%;" id = 'play'>
+                            <img src="https://spotify.freewebhostmost.com/img/nextsong.svg" alt="" srcset="" style="height: 70%;" class="invert" id = "next">
+                        </div>
+                        <div class="timeandvolume">
+                            <div class="song-time flex">
+                            
+                            </div>
+                            <div class="volume flex">
+                                <img src="images/volume.svg" alt="" srcset="" class="invert" id = "volume_btn">
+                                <input type="range" id="volume" name="vol" min="0" max="100" value="70">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="seekbar flex ">
+                        <input type="range" id = "seekbar" min="0" value="0">
+                    </div>
+                   
+                    
+                   
+                </div>
+            </div>
+           
+
+        </div> 
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
